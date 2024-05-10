@@ -78,10 +78,12 @@ node index.js //replace index with the name of your file, if need be.
 
 + **buyItem(itemIndex)**     
     This function allows the user to buy item(s) from the shop.
+     The `itemIndex` parameter specifies the index of the item to be purchased and must be an integer.
     
 
 + **sellItem(itemIndex)**     
     This function allows the user to sell item(s) from the inventory.
+     The `itemIndex` parameter specifies the index of the item to be sold and must be an integer.
 
 + **viewInventory()**      
     This function returns the name of each item in the player's inventory.
@@ -91,6 +93,7 @@ node index.js //replace index with the name of your file, if need be.
 
 + **unlockSkill(skillIndex)**     
     This function allows the user to unlock a skill.
+     The `skillIndex` parameter specifies the index of the skill to be unlocked and must be an integer.
 
 + **getPlayerLevel()**     
     This function return the player's level
@@ -100,15 +103,7 @@ node index.js //replace index with the name of your file, if need be.
 
 + **addExperience(points)**     
     This function allows the player to add on to their experience points(after completing tasks) in order to increase their level. [Note : For this node module, there are no tasks added.]
-
-
-
-
-
-
-
-
-
-
+     The `points` parameter specifies the number of experience points to be added and must be an integer.
+     
 
 

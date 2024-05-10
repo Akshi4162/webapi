@@ -11,7 +11,7 @@ I created this node module to track various aspects of gameplay events that are 
 npm install
 ```
 You may want to create a index.js in the same directory of the repository that you have cloned earlier and paste in this code 
-```
+```bash
 const gameModule = require('./Akshitha_GameUse.js'); 
 
 

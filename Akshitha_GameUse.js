@@ -29,11 +29,15 @@ module.exports = {
     // Allow the player to spend coins to purchase items from a shop
     buyItem(itemIndex) {
         let item = shopItems[itemIndex];
+        if(itemIndex < 0 || itemIndex >= shopItems.length){
+            return "Item not available.";
+        }
         if (playerProgress.coins >= item.price) {
             playerProgress.coins -= item.price;
             playerProgress.inventory.push(item.name);
             return `Bought ${item.name} for ${item.price} coins.`;
-        } else {
+        } 
+        else {
             return `You don't have enough coins to buy this ${item.name}.`;
         }
     },
@@ -97,11 +101,10 @@ module.exports = {
     // Increase the player's experience points based on their actions in the game
     addExperience(points) {
         playerProgress.experience += points;
-        if (playerProgress.experience >= 500) {
+        if (playerProgress.experience >= 500 ) {
             let levelIncrease = Math.floor(playerProgress.experience / 500); // Calculate level increase
             playerProgress.level += levelIncrease; // Increase player's level
             playerProgress.experience %= 500; // Reset experience points
-            // return `You gained ${points} experience points.`;
             return `You gained ${points} experience points. \nCongrats, you leveled up! Your new level is ${playerProgress.level}.`;
         } else {
             return `You gained ${points} experience points.`;

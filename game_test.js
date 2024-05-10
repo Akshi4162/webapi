@@ -23,7 +23,7 @@ console.log(gameModule.checkShopItems());
 
 //TRYING TO BUY ITEM(S)
 console.log("\nBuying an item:");
-console.log(gameModule.buyItem(1)); 
+console.log(gameModule.buyItem(3)); 
 console.log(gameModule.checkCoins()); // Check updated number of coins
 console.log(gameModule.viewInventory()); // Check updated inventory
 
@@ -35,7 +35,7 @@ console.log(gameModule.viewInventory());
 
 //ADDING GAME EXPERIENCE POINTS TO INCREASE PLAYER'S LEVEL
 console.log("\nAdding game experience points to increase level :");
-console.log(gameModule.addExperience(50));
+console.log(gameModule.addExperience(-50));
 console.log(gameModule.getPlayerExperience());
 console.log(gameModule.addExperience(470));
 console.log(gameModule.getPlayerExperience());

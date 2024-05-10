@@ -5,38 +5,35 @@ I created this node module to track various aspects of gameplay events that are 
 (Examples of such games could be MineCraft, Fire Emblem and Pokemon)
 
 ## The Various fuctions and their explanation
-1. **checkCoins()** 
+1. **checkCoins()**     
+    This function returns the number of coins the player has.
 
-This function returns the number of coins the player has.
 
 2. **checkShopItems()**
-
-This function returns the name and price of each item in the shop.
+    This function returns the name and price of each item in the shop.
 
 3. **buyItem(itemIndex)**
-
-This function allows the user to buy item(s) from the shop.
-
-If a user tries to buy a item that is not available or with not enough coins a error message would show up.
+    This function allows the user to buy item(s) from the shop.
 
 4. **sellItem(itemIndex)**
-This function allows the user to sell item(s) from the inventory.
-
+    This function allows the user to sell item(s) from the inventory.
 
 5. **viewInventory()**
+    This function returns the name of each item in the player's inventory.
 
 6. **getUnlockedSkills()**
+    This function returns the name of each skill that the player has unlocked.
 
 7. **unlockSkill(skillIndex)**
+    This function allows the user to unlock a skill.
 
 8. **getPlayerLevel()**
+    This function return the player's level
 
 9. **getPlayerExperience()**
+    This function returns the player's experience points.
 
 10. **addExperience(points)**
+    This function allows the player to add on to their experience points(after completing tasks) in order to increase their level. [Note : For this node module, there are no tasks added.]
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
-
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

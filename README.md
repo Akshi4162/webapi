@@ -5,7 +5,7 @@ I created this node module to track various aspects of gameplay events that are 
 (Examples of such games could be MineCraft, Fire Emblem and Pokemon)
 
 ##The Various fuctions and their explanation
-1. checkCoins() 
+1. ** checkCoins() ** 
 
 2. checkShopItems()
 

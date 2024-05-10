@@ -10,10 +10,12 @@ I created this node module to track various aspects of gameplay events that are 
 ```
 npm install
 ```
-You may want to create a index.js in the same directory of the repository that you have cloned earlier and paste in this code 
-```bash
-const gameModule = require('./Akshitha_GameUse.js'); 
 
+You may want to create a index.js in the same directory of the repository that you have cloned earlier and paste in this code 
+
+
+```
+const gameModule = require('./index.js'); 
 
 // CHECKING PLAYER'S INITIAL STATE
 console.log("Initial player's state:");
@@ -54,12 +56,11 @@ console.log(gameModule.getPlayerExperience());
 console.log(gameModule.addExperience(470));
 console.log(gameModule.getPlayerExperience());
 console.log(gameModule.getPlayerLevel());
-
-
-
 ```
+
 (Or you can create your own code and test out the functions. All the various functions that are available are listed below. Please scroll down to check them out.😊👍)
-+ Run the following command to start the node module:
+
++ Then run the following command to start the node module:
 ```
 node index.js
 ```
@@ -97,5 +98,15 @@ node index.js
 
 + **addExperience(points)**     
     This function allows the player to add on to their experience points(after completing tasks) in order to increase their level. [Note : For this node module, there are no tasks added.]
+
+
+
+
+
+
+
+
+
+
 
 

@@ -61,7 +61,7 @@ console.log(gameModule.getPlayerExperience());
 
 (Or you can create your own code and test out the functions. All the various functions that are available are listed below. 😊👍)
 
-+ Then run the following command to start the node module:
++ Then run the following command on terminal:
 ```
 node index.js //replace index with the name of your file, if need be.
 ```

@@ -14,10 +14,10 @@ npm install
 + In the event you may need a sample code to test out the fuctions, you may want to create a index.js in the same directory of the repository that you have cloned earlier and paste in this code :
 
 
-```
+``` bash
 const gameModule = require('./index.js'); 
 
-// CHECKING PLAYER'S INITIAL STATE
+//CHECKING PLAYER'S INITIAL STATE
 console.log("Initial player's state:");
 console.log(gameModule.getPlayerLevel()); 
 console.log(gameModule.getPlayerExperience()); 

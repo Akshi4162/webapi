@@ -4,8 +4,8 @@
 I created this node module to track various aspects of gameplay events that are usually performed by gamers on a game. This includes tracking the player's in-game level, experience points, skills, coins and inventory. 
 (Examples of such games could be MineCraft, Fire Emblem and Pokemon)
 
-##The Various fuctions and their explanation
-1. ** checkCoins() ** 
+## The Various fuctions and their explanation
+1. **checkCoins()** 
 
 2. checkShopItems()
 

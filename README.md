@@ -1,4 +1,29 @@
-# Assignment 1
+# Assignment 1 (Game Module)
+
+##Description of my node module: 
+I created this node module to track various aspects of gameplay events that are usually performed by gamers on a game. This includes tracking the player's in-game level, experience points, skills, coins and inventory. 
+(Examples of such games could be MineCraft, Fire Emblem and Pokemon)
+
+##The Various fuctions and their explanation
+1. checkCoins() 
+
+2. checkShopItems()
+
+3. buyItem(itemIndex)
+
+4. sellItem(itemIndex)
+
+5. viewInventory()
+
+6. getUnlockedSkills()
+
+7. unlockSkill(skillIndex)
+
+8. getPlayerLevel()
+
+9. getPlayerExperience()
+
+10. addExperience(points)
 
 You will only need one file, ie, your node module, for this assignment.
 

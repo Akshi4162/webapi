@@ -82,7 +82,7 @@ node index.js //replace index with the name of your file, if need be.
     
 
 + **sellItem(itemIndex)**     
-    This function allows the user to sell item(s) from the inventory.
+    This function allows the player to sell item(s) from the inventory.
      The `itemIndex` parameter specifies the index of the item to be sold and must be an integer.
 
 + **viewInventory()**      
@@ -92,7 +92,7 @@ node index.js //replace index with the name of your file, if need be.
     This function returns the name of each skill that the player has unlocked.
 
 + **unlockSkill(skillIndex)**     
-    This function allows the user to unlock a skill.
+    This function allows the player to unlock a skill.
      The `skillIndex` parameter specifies the index of the skill to be unlocked and must be an integer.
 
 + **getPlayerLevel()**     

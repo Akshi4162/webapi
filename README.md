@@ -28,7 +28,7 @@ console.log(gameModule.viewInventory());
 // TRYING TO UNLOCK SKILLS 
 console.log("\nUnlocking Various Skills:");
 console.log(gameModule.unlockSkill(0)); 
-console.log(gameModule.unlockSkill(0)); // If player tries to unlock the same skill again, a error message would show.
+console.log(gameModule.unlockSkill(0)); // If player tries to unlock a skill that doesn't exist or the same skill again, a error message would show.
 console.log(gameModule.unlockSkill(1));
 
 console.log(gameModule.getUnlockedSkills());//Shows all available skills unlocked by the player
@@ -63,7 +63,7 @@ console.log(gameModule.getPlayerExperience());
 
 + Then run the following command to start the node module:
 ```
-node index.js
+node index.js //replace index with the name of your file, if need be.
 ```
 
 
@@ -78,6 +78,7 @@ node index.js
 
 + **buyItem(itemIndex)**     
     This function allows the user to buy item(s) from the shop.
+    
 
 + **sellItem(itemIndex)**     
     This function allows the user to sell item(s) from the inventory.

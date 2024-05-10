@@ -70,6 +70,7 @@ module.exports = {
         }
     },
 
+    //ADisplays all skills unlocked by the user
     getUnlockedSkills(){
         if (playerProgress.unlockedSkills.length === 0){
             return "Unlocked Skills: None";
@@ -89,16 +90,17 @@ module.exports = {
         }
     },
 
-    //getplayer's level
+    //get player's level
     getPlayerLevel(){
         return `Current Level: ${playerProgress.level}`;
     },
 
+    //get player's experience points
     getPlayerExperience(){
         return `Experience Points in your current level (${playerProgress.level}): ${playerProgress.experience}`;
     },
  
-    // Increase the player's experience points based on their actions in the game
+    // Increase the player's experience points 
     addExperience(points) {
         playerProgress.experience += points;
         if (playerProgress.experience >= 500 ) {

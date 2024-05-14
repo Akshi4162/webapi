@@ -23,7 +23,7 @@ module.exports = {
     // Check shop items
     checkShopItems() {
         //This would display the items' name and price without the brackets
-        let itemsString = shopItems.map(item => `Name: ${item.name}, Price: ${item.price}`).join("\n");
+        let itemsString = shopItems.map((item, index) => `${index + 1}. Name: ${item.name}, Price: ${item.price}`).join("\n");
         return ` Items available to buy: \n${itemsString}`;
     },
 
@@ -32,12 +32,14 @@ module.exports = {
         let item = shopItems[itemIndex]; //item is being assigned the value of the item at the specified index
         // Check if the item is available
         if(itemIndex < 0 || itemIndex >= shopItems.length){
+            // throw new Error("Invalid item index");
             return "Item not available.";
         }
         // Check if the player has enough coins to buy the item
         if (playerProgress.coins >= item.price) {
             playerProgress.coins -= item.price;
             playerProgress.inventory.push(item.name);
+            console.log(`Bought ${item.name} for ${item.price} coins. Remaining coins: ${playerProgress.coins}`);
             return `Bought ${item.name} for ${item.price} coins.`;
         } 
         else {
@@ -49,6 +51,7 @@ module.exports = {
     sellItem(itemIndex) {
         // Check if the item is available in inventory
         if (itemIndex < 0 || itemIndex >= playerProgress.inventory.length) {
+            // throw new Error("Invalid item index");
             return "There's no items you can sell.";
         }
 
@@ -60,6 +63,7 @@ module.exports = {
             let sellingPrice = Math.floor(itemInShop.price * 0.5); //makes the selling price to be half of it's original price
             playerProgress.coins += sellingPrice; 
             playerProgress.inventory.splice(itemIndex, 1);  //removes the item from the inventory
+            console.log(`Sold ${item} for ${sellingPrice} coins. Total coins: ${playerProgress.coins}`);
             return `Sold ${item} for ${sellingPrice} coins.`;
         } else {
             return `Item ${item} is not sellable.`;
@@ -71,7 +75,7 @@ module.exports = {
         if (playerProgress.inventory.length === 0) {
             return "Inventory : None";
         } else {
-            return `Inventory : ${playerProgress.inventory}`;
+            return `Inventory:\n${playerProgress.inventory.map((item, index) => `${index + 1}. ${item}`).join('\n')}`;
         }
     },
 
@@ -80,7 +84,7 @@ module.exports = {
         if (playerProgress.unlockedSkills.length === 0){
             return "Unlocked Skills: None";
         } else{
-        return `All skills you unlocked: ${playerProgress.unlockedSkills}`;
+        return `All skills you unlocked: \n${playerProgress.unlockedSkills} `;
         }
     },
 
@@ -89,11 +93,17 @@ module.exports = {
         let skill = availableSkills[skillIndex];
         if (!playerProgress.unlockedSkills.includes(skill)) {  
             playerProgress.unlockedSkills.push(skill);   //Adds the newly unlocked skill to the player's list of unlocked skills
+            console.log(`Unlocked skill: ${skill}`);
             return `You unlocked ${skill}.`;
         } 
         else {
             return `${skill} is already unlocked.`; //would give this message to player if they try to unlock a skill again
         }
+    },
+
+    //Displays all skills that are available regardless whether they were unlocked or not
+    listAvailableSkills() {
+        return `Available Skills:\n${availableSkills.map((skill, index) => `${index + 1}. ${skill}`).join('\n')}`;
     },
 
     //get player's level

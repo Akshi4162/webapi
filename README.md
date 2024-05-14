@@ -66,7 +66,7 @@ console.log(gameModule.getPlayerExperience());
 
 + Then run the following command on terminal:
 ```
-node index.js //replace index with the name of your file, if need be.
+nodemon index.js //replace index with the name of your file, if need be.
 ```
 
 

@@ -23,6 +23,7 @@ module.exports = {
     // Check shop items
     checkShopItems() {
         //This would display the items' name and price without the brackets
+        //Also displays each item with a specific index number as well.
         let itemsString = shopItems.map((item, index) => `${index + 1}. Name: ${item.name}, Price: ${item.price}`).join("\n");
         return ` Items available to buy: \n${itemsString}`;
     },
@@ -75,6 +76,7 @@ module.exports = {
         if (playerProgress.inventory.length === 0) {
             return "Inventory : None";
         } else {
+            //Displays each item in inventory with name and a specific index number as well.
             return `Inventory:\n${playerProgress.inventory.map((item, index) => `${index + 1}. ${item}`).join('\n')}`;
         }
     },
@@ -103,6 +105,7 @@ module.exports = {
 
     //Displays all skills that are available regardless whether they were unlocked or not
     listAvailableSkills() {
+        //Displays each skill with name and a specific index number as well.
         return `Available Skills:\n${availableSkills.map((skill, index) => `${index + 1}. ${skill}`).join('\n')}`;
     },
 

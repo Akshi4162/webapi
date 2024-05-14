@@ -14,8 +14,9 @@ npm install
 + In the event you may need a sample code to test out the fuctions, you may want to create a index.js in the same directory of the repository that you have cloned earlier and paste in this code :
 
 
-``` bash
-const gameModule = require('./Akshitha_GameTracker.js'); 
+``` js
+
+const gameModule = require('./index.js'); 
 
 // CHECKING PLAYER'S INITIAL STATE
 console.log("Initial player's state:");
@@ -58,6 +59,7 @@ if they gained more than 500 points from a certain time,
 their unused points will be carried over to the next level.*/
 console.log(gameModule.addExperience(500)); 
 console.log(gameModule.getPlayerExperience());
+
 ```
 
 (Or you can create your own code and test out the functions. All the various functions that are available are listed below. 😊👍)

@@ -102,14 +102,14 @@ nodemon index.js //replace index with the name of your file, if need be.
 + **buyItem(itemIndex)**     
     This function allows the user to buy item(s) from the shop.
      The `itemIndex` parameter specifies the index of the item to be purchased and must be an integer.     
-     Note: To view all available buyable items and their specific indexes, use the `checkShopItems()` function.
+        Note: To view all available buyable items and their specific indexes, use the `checkShopItems()` function.
 
     
 
 + **sellItem(itemIndex)**     
     This function allows the player to sell item(s) from the inventory.
      The `itemIndex` parameter specifies the index of the item to be sold and must be an integer.     
-     Note: To view all items (in your inventory) & their specific indexes, use the `viewInventory()` function
+        Note: To view all items (in your inventory) & their specific indexes, use the `viewInventory()` function
 
 
 + **viewInventory()**      
@@ -121,7 +121,7 @@ nodemon index.js //replace index with the name of your file, if need be.
 + **unlockSkill(skillIndex)**     
     This function allows the player to unlock a skill.
      The `skillIndex` parameter specifies the index of the skill to be unlocked and must be an integer.     
-     Note: To view all available skills and their specific indexes, use the `listAvailableSkills()` function.
+        Note: To view all available skills and their specific indexes, use the `listAvailableSkills()` function.
 
 + **listAvailableSkills()**     
     This function allows the player to view all possible skills that are available.

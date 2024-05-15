@@ -16,7 +16,7 @@ npm install
 
 ``` js
 
-const gameModule = require('./index.js'); 
+const gameModule = require('./Akshitha_GameTracker.js'); 
 
 // CHECKING PLAYER'S INITIAL STATE
 console.log("Initial player's state:");

@@ -26,6 +26,10 @@ console.log(gameModule.getUnlockedSkills());
 console.log(gameModule.checkCoins());
 console.log(gameModule.viewInventory()); 
 
+
+console.log("===================================="); 
+
+
 // TRYING TO UNLOCK SKILLS 
 console.log("\nUnlocking Various Skills:");
 console.log(gameModule.listAvailableSkills()); //Shows all possible unlockable skills
@@ -35,9 +39,17 @@ console.log(gameModule.unlockSkill(1));
 
 console.log(gameModule.getUnlockedSkills());//Shows all skills unlocked by the player
 
+
+console.log("===================================="); 
+
+
 //CHECKING ALL THE AVAILABLE ITEMS IN SHOP
 console.log("\nCheck all available items on sale: ");
 console.log(gameModule.checkShopItems()); 
+
+
+console.log("===================================="); 
+
 
 //TRYING TO BUY ITEM(S)
 console.log("\nBuying an item:");
@@ -46,11 +58,19 @@ console.log(gameModule.buyItem(0));
 console.log(gameModule.checkCoins()); // Check updated number of coins
 console.log(gameModule.viewInventory()); // Check updated inventory
 
+
+console.log("===================================="); 
+
+
 //TRYING TO SELL ITEM(S)
 console.log("\nSelling an item:");
 console.log(gameModule.sellItem(0)); //If player tries selling with no items in inventory, a error message would show.
 console.log(gameModule.checkCoins()); // Check updated number of coins
 console.log(gameModule.viewInventory()); // Check updated inventory
+
+
+console.log("===================================="); 
+
 
 //ADDING GAME EXPERIENCE POINTS TO INCREASE PLAYER'S LEVEL
 console.log("\nAdding game experience points to increase level :");
